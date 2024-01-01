@@ -46,12 +46,10 @@ Optionally format text using basic options like bold and italic.
 View the list of notes with titles and snippets.
 Click on a note to view its full content.
 Edit or delete notes using the provided options.
-Contributing
-If you'd like to contribute to this project, please follow the standard GitHub fork and pull request workflow. Feel free to report issues or suggest enhancements.
 
 Acknowledgements
 ReactJS
 Redux
 Tailwind CSS
 FontAwesome for React
-Enjoy note-taking with this simple and efficient React application!
+
