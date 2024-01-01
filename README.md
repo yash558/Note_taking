@@ -26,23 +26,19 @@ A simple and functional note-taking application built with ReactJS, Redux, Tailw
 
    ```bash
    git clone https://github.com/yash558/Note_taking.git
-Navigate to the project directory:
+2. Navigate to the project directory:
 
-bash
-Copy code
-cd react-note-app
-Install dependencies:
+   ```bash
+   cd Note_taking
+3. Install dependencies:
 
-bash
-Copy code
-npm install
-Running the Application
+   ```bash
+   npm install
+4. Running the Application
 Start the development server:
-
-bash
-Copy code
-npm start
-Open your browser and visit http://localhost:3000 to view the application.
+   ```bash
+   npm start
+5. Open your browser and visit http://localhost:3000 to view the application.
 
 Usage
 Create a new note by providing a title and body text.
@@ -52,8 +48,6 @@ Click on a note to view its full content.
 Edit or delete notes using the provided options.
 Contributing
 If you'd like to contribute to this project, please follow the standard GitHub fork and pull request workflow. Feel free to report issues or suggest enhancements.
-
-
 
 Acknowledgements
 ReactJS
