@@ -25,7 +25,7 @@ A simple and functional note-taking application built with ReactJS, Redux, Tailw
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/react-note-app.git
+   git clone https://github.com/yash558/Note_taking.git
 Navigate to the project directory:
 
 bash
@@ -53,8 +53,7 @@ Edit or delete notes using the provided options.
 Contributing
 If you'd like to contribute to this project, please follow the standard GitHub fork and pull request workflow. Feel free to report issues or suggest enhancements.
 
-License
-This project is licensed under the MIT License.
+
 
 Acknowledgements
 ReactJS
