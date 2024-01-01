@@ -15,6 +15,10 @@ const Note = ({ note }) => {
   const dispatch = useDispatch();
   const [isEditing, setEditing] = useState(false);
   const [updatedText, setUpdatedText] = useState(note.body);
+
+  const handleChange = (e) => {
+    setUpdatedText(e.target.value);
+  };
   const [isModalOpen, setModalOpen] = useState(false);
   const [isNoteModalOpen, setNoteModalOpen] = useState(false);
 
@@ -53,7 +57,8 @@ const Note = ({ note }) => {
         <div className="flex flex-col space-y-4">
           <textarea
             value={updatedText}
-            onChange={(e) => setUpdatedText(e.target.value)}
+            onChange={handleChange}
+          
             className="p-2 border border-gray-300 rounded-md h-32 resize-none"
           />
           <div className="flex justify-end space-x-4">
