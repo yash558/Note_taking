@@ -1,4 +1,4 @@
-# React Note Taking App
+# Note Taking App
 
 A simple and functional note-taking application built with ReactJS, Redux, Tailwind CSS, and local storage.
 
