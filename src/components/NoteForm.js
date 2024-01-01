@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { addNote } from '../redux/actions';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const NoteForm = () => {
   const dispatch = useDispatch();
@@ -11,6 +13,18 @@ const NoteForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!title.trim()) {
+      
+      toast.error('Please fill the title.');
+      return;
+    }
+  
+    if (!body.trim()) {
+      
+      toast.error('Please fill the body.');
+      return;
+    }
     const newNote = {
       id: Date.now(),
       title,
@@ -19,10 +33,12 @@ const NoteForm = () => {
     dispatch(addNote(newNote));
     setTitle('');
     setBody('');
+    toast.success('Note added successfully!');
   };
 
   return (
     <div className="flex items-center justify-center ">
+       <ToastContainer />
       <form
         onSubmit={handleSubmit}
         className="bg-white p-8 mb-10 max-w-md w-full rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
